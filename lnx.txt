@@ -2,3 +2,19 @@ test3
 test4
 test5
 http://www.grymoire.com/Unix/Awk.html
+touch FileOwner
+touch FileOwner && kate FileOwner
+chmod +x FileOwner
+[fo@localhost linuxnotes]$ chmod +x FileOwner
+[fo@localhost linuxnotes]$ lnx 'chmod +x FileOwner'
+[fo@localhost linuxnotes]$ ls -l | FileOwner
+bash: FileOwner: command not found...
+[fo@localhost linuxnotes]$ ls
+FileOwner  lnx.txt  README.md  tenletterwords.txt
+[fo@localhost linuxnotes]$ ls FileOwner 
+FileOwner
+[fo@localhost linuxnotes]$ mv FileOwner FileOwner.sh
+[fo@localhost linuxnotes]$ chmod +x FileOwner.sh
+head -n 100 tenletterwords.txt > top100_10letter_words.txt
+ls -l | ./FileOwner.sh
+need to execute using ./ to fire
